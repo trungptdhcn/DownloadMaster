@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Root.Theme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="Theme" parent="Root.Theme">
+    </style>
+    <style name="Theme.GGApp.Base" parent="Theme">
+    </style>
+    <style name="Theme.GGApp" parent="Theme.GGApp.Base" />
+    <style name="Theme.GGApp.WithNavDrawer" parent="Theme.GGApp" />
+    <style name="Theme.GGApp.StatusBarTransparent" parent="Theme.GGApp" />
+    <style name="Theme.GGApp.Main" parent="Theme.GGApp.WithNavDrawer">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/red_simi</item>
+        <item name="colorPrimaryDark">@color/red_simi</item>
+        <item name="colorAccent">@color/red_simi</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+    <style name="Theme.GGApp.Stream" parent="Theme.GGApp.StatusBarTransparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/red_simi</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="MyDropDownListView" parent="android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/spinner_bg</item>
+    </style>
+    <style name="MySpinnerDropDownItem" parent="android:style/Widget.DropDownItem.Spinner">
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:checkMark">@null</item>
+    </style>
+</resources>

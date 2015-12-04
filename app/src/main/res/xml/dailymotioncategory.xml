@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<categories>
+    <category id="music" name="Music"/>
+    <category id="videogames" name="Game"/>
+    <category id="sport" name="Sport"/>
+    <category id="news" name="News"/>
+    <category id="shortfilms" name="Short films"/>
+    <category id="tv" name="TV Show"/>
+    <category id="fun" name="Funny Channel"/>
+    <category id="lifestyle" name="LifeStyle"/>
+    <category id="auto" name="Auto"/>
+    <category id="animals" name="Animals"/>
+    <category id="creation" name="Creation"/>
+    <category id="people" name="People"/>
+    <category id="school" name="School"/>
+    <category id="tech" name="Tech"/>
+    <category id="travel" name="Travel"/>
+    <category id="webcam" name="WebCome"/>
+    <category id="kids" name="Kids Channel"/>
+</categories>

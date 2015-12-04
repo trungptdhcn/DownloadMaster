@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+    <!--<include layout="@layout/advanced_youtube_search_layout"></include>-->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+                android:id="@+id/youtube_search_fragment_lvSearchResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/advanced_youtube_search_layout_rlAdvancedSearch">
+        </ListView>
+        <com.melnykov.fab.FloatingActionButton
+                android:id="@+id/youtube_search_fragment_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/arrow_up"
+                android:layout_gravity="bottom|right"
+                />
+    </FrameLayout>
+    <ProgressBar
+            android:id="@+id/youtube_search_fragment_progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+</RelativeLayout>

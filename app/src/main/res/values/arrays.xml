@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order">
+        <item>Date</item>
+        <item>Rating</item>
+        <item>Relevance</item>
+        <item>Title</item>
+        <item>VideoCount</item>
+        <item>ViewCount</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Channel</item>
+        <item>Playlist</item>
+        <item>Relevance</item>
+        <item>Video</item>
+    </string-array>
+
+    <string-array name="videoDuration">
+        <item>Any</item>
+        <item>Long</item>
+        <item>Medium</item>
+        <item>Short</item>
+    </string-array>
+    <string-array name="videoDefinition">
+        <item>Any</item>
+        <item>High</item>
+        <item>Standard</item>
+    </string-array>
+    <string-array name="videoType">
+        <item>Any</item>
+        <item>Episode</item>
+        <item>Movie</item>
+    </string-array>
+
+</resources>

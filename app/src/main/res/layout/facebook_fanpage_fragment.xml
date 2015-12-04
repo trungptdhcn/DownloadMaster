@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+                android:id="@+id/facebook_fanpage_fragment_lvFanpage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/advanced_youtube_search_layout_rlAdvancedSearch">
+        </ListView>
+        <com.melnykov.fab.FloatingActionButton
+                android:id="@+id/youtube_search_fragment_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/arrow_up"
+                android:layout_gravity="bottom|right"
+                />
+        <com.google.android.gms.ads.AdView
+                android:id="@+id/list_fragment_native_adsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                android:layout_gravity="bottom"
+                ads:adUnitId="@string/download_master_native_ads"
+                >
+        </com.google.android.gms.ads.AdView>
+    </FrameLayout>
+    <ProgressBar
+            android:id="@+id/facebook_fanpage_fragment_progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+</RelativeLayout>

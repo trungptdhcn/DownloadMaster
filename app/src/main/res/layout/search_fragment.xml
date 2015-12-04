@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/search_fragment_rlSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            >
+        <com.rey.material.widget.Spinner
+                android:id="@+id/search_fragment_spinnerChoseHost"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:popupBackground="@color/white"
+                android:layout_marginRight="@dimen/spacing_small"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave.Light"
+                app:spn_dividerAnimDuration="@android:integer/config_shortAnimTime"
+                app:spn_arrowColor="@color/white"
+                app:spn_arrowSize="8dp"
+                app:spn_arrowPadding="@dimen/spacing_normal"
+                />
+
+        <EditText
+                android:id="@+id/search_fragment_edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@drawable/background_editext"
+                android:layout_margin="@dimen/spacing_small"
+                android:drawableRight="@drawable/search"
+                android:paddingRight="@dimen/spacing_small"
+                android:paddingLeft="@dimen/spacing_small"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:inputType="text"
+                android:textColor="@color/gray_21"
+                android:imeOptions="actionSearch"
+                android:layout_toLeftOf="@+id/search_fragment_spinnerChoseHost"
+                />
+    </RelativeLayout>
+    <FrameLayout
+            android:id="@+id/search_fragment_frContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>
